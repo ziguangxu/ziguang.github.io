@@ -1,53 +1,16 @@
-
 body {
 	font-family: times new roman;
 }
 img {
 	float: left;
-	width: 150px;
-	height: 200px;
 }
-#header {
-	background-color: black;
-	color: white;
-	height: 200px;
-	padding: 5px;
-}
-#nav {
-	line-height: 30px;
-	background-color: #eeeeee;
-	height: 700px;
-	width: 200px;
-	float: left;
-	padding: 10px;
-}
-ul#navigation {
-	list-style-type: none;
-}
-a:link {
-	color: black;
-	text-decoration: none;
-}
-a:visited {
-	color: blue;
-	text-decoration: none;
-}
-a:active {
-	color: red;
-	text-decoration: underline;
-}
-a:hover {
-	color: orange;
-	text-decoration: underline;
-}
-#section {
-	float: left;
-	padding: 10px;
+p.content {
+    font-size: 110%;
 }
 #footer {
 	background-color: black;
 	color: white;
 	clear: both;
 	text-align: center;
-	padding: 5px
+	padding: 10px
 }
