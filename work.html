@@ -1,51 +1,70 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
 		<title>Work Experience</title>
-		<link rel="stylesheet" type="text/css" href="CSS/main.css">
-		<style>
-			ul.entites {
-				list-style-type:disc;
-			}
-		</style>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  		
+		<link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+		<script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/main.css">	
 	</head>
 	<body>
-		<div id="header">
-			<img src="images/photo.png">
-			<h1>Ziguang Xu</h1>
-			<p>cell: 832-341-4958<br>
-			   email: zxu6@uh.edu<br>
-			   Address: Los Angeles, CA, 90034
-			</p>
-		</div>
-		<div id="nav">
-			<ul id="navigation">
-				<li><a href="index.html">Biography</a></li>
-				<li><a href="work.html">Work Experience</a></li>
-				<li><a href="project.html">Project</a></li>
-			</ul>
-		</div>
-		<div id="section">
-			<h2>WORK EXPERIENCE</h2>
-			<h3>OpenTrade, Inc. Los Angeles, CA</h3>
-			<p> &nbsp;&nbsp;Software Engineer <em style="float:right">Mar 2015 - Present</em></p>
-			<h3>University of Houston,Houston, TX</h3>
-			<p> &nbsp;&nbsp;Research Assistant <em style="float:right">Jan 2014 - May 2014</em></p>
-			<ul class="entites">
-				<li>Identified discrete control system using Least Square Estimation (LSE) algorithm based on the system<br> 
-				    input and output data</li>
-				<li>Developed a recursive algorithm to optimize LSE method. It guaranteed the efficiency of LSE when the<br> 
-				    matrix in LSE equation was not invertible</li>
-				<li>Built a pre-filter to reduce system noise and applied it to LSE and implemented it with MatLab code. It<br>
-				    improved identification accuracy by 25% comparing with the non-filter method</li>
-			</ul>
-			<h3>University of Houston, Houston, TX</h3>
-			<p> &nbsp;&nbsp;Teaching Assistant <em style="float:right">Sep 2013 - Dec 2013</em></p>
-			<ul class="entites">
-			<li>Reviewed and revised MatLab code and Simulink model for master students and illuminated their questions<br>
-			    on how to build mathematic representation for a hydraulic system</li>
-			</ul>		
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>                        
+      				</button>
+					<a class="navbar-brand" href="index.html">Ziguang Xu</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Biography</a></li>
+						<li class="active"><a href="work.html">Work Experience</a></li>
+						<li><a href="project.html">Project</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="jumbotron">
+				<img src="images/photo.png" class="img-circle" alt="Ziguang Xu" width="160" height="225">
+				<h1>Ziguang Xu</h1>
+				<p>Cell: 832-341-4958<br>
+			   	   Email: zxu6@uh.edu<br>
+			       Address: Los Angeles, CA, 90034
+			    </p>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<h3>OpenTrade, Inc. Los Angeles, CA</h3>
+					<p class="content"> &nbsp;&nbsp;Software Engineer <em style="float:right">Mar 2015 - Present</em></p>
+				</div>
+				<div class="col-md-4">
+					<h3>University of Houston,Houston, TX</h3>
+					<p class="content"> &nbsp;&nbsp;Research Assistant <em style="float:right">Jan 2014 - May 2014</em></p>
+					<ul class="entites">
+						<li><p class="content">
+							Identified discrete control system using Least Square Estimation (LSE) algorithm based on the 
+							system input and output data</p></li>
+						<li><p class="content">Developed a recursive algorithm to optimize LSE method. It guaranteed the efficiency of LSE 
+							   when the matrix in LSE equation was not invertible</p></li>
+						<li><p class="content">Built a pre-filter to reduce system noise and applied it to LSE and implemented it with MatLab code. 
+							   It improved identification accuracy by 25% comparing with the non-filter method</p></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h3>University of Houston,Houston, TX</h3>
+					<p class="content"> &nbsp;&nbsp;Teaching Assistant <em style="float:right">Sep 2013 - Dec 2013</em></p>
+					<ul class="entites">
+						<li><p class="content">Reviewed and revised MatLab code and Simulink model for master students and illuminated their questions
+			                   on how to build mathematic representation for a hydraulic system</p></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 		<div id="footer">
 			<p>Copyright &copy; Ziguang</p>

@@ -1,49 +1,65 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>Work Experience</title>
 		<meta charset="UTF-8">
-		<title>Project</title>
-		<link rel="stylesheet" type="text/css" href="CSS/main.css">
-		<style>
-			ul.entites {
-				list-style-type:disc;
-			}
-		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  		
+		<link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+		<script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/main.css">	
 	</head>
 	<body>
-		<div id="header">
-			<img src="images/photo.png">
-			<h1>Ziguang Xu</h1>
-			<p>cell: 832-341-4958<br>
-			   email: zxu6@uh.edu<br>
-			   Address: Los Angeles, CA, 90034
-			</p>
-		</div>
-		<div id="nav">
-			<ul id="navigation">
-				<li><a href="index.html">Biography</a></li>
-				<li><a href="work.html">Work Experience</a></li>
-				<li><a href="project.html">Project</a></li>
-			</ul>
-		</div>
-		<div id="section">
-			<h2>PROJECT</h2>
-			<p><b>Team Project of Iris Detection and Recognition</b><em style="float:right">Fall 2013</em></p>
-			<ul class="entites">
-				<li>Used filters including Medium filter and Canny filter to attenuate the noise of raw images in Matlab<br> </li>
-				<li>Designed a Log-Gabor wavelet based on the mathematic expression, applied it to extract iris information<br> 
-				    from modified images and converted the information to binary code for final recognition, leading to a<br>
-				    recognition accuracy of 94.4%</li>
-				<li>Create a database for posterior algorithm test, it reduced the running time significantly comparing with the<br>
-				    method without database</li>
-			</ul>
-			<p><b>Student Administration System</b><em style="float:right">Spring 2012</em></p>
-			<ul class="entites">
-			<li>Designed a user-friendly interface for users to add, search, modify and manage students' information and<br>
-			    sort students' rank according to their score</li>
-			<li>Developed a front-end program using Java Swing interface, creaated a database with SQL Server to store the<br>
-			    information and connected it to the front-end program with JDBC driver</li>
-			</ul>		
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>                        
+      				</button>
+					<a class="navbar-brand" href="index.html">Ziguang Xu</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Biography</a></li>
+						<li><a href="work.html">Work Experience</a></li>
+						<li class="active"><a href="project.html">Project</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="jumbotron">
+				<img src="images/photo.png" class="img-circle" alt="Ziguang Xu" width="160" height="225">
+				<h1>Ziguang Xu</h1>
+				<p>Cell: 832-341-4958<br>
+			   	   Email: zxu6@uh.edu<br>
+			       Address: Los Angeles, CA, 90034
+			    </p>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<p class="lead"><b>Iris Detection and Recognition</b><em style="float:right">Fall 2013</em></p>
+					<ul class="entites">
+						<li><p class="content">Used filters including Medium filter and Canny filter to attenuate the noise of raw images in Matlab</p></li>
+						<li><p class="content">Designed a Log-Gabor wavelet based on the mathematic expression, applied it to extract iris information
+				    		from modified images and converted the information to binary code for final recognition, leading to a
+				    		recognition accuracy of 94.4%</li>
+						<li><p class="content">Create a database for posterior algorithm test, it reduced the running time significantly comparing with the
+				    		method without database</p></li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<p class="lead"><b>Student Administration System</b><em style="float:right">Spring 2012</em></p>
+					<ul class="entites">
+					<li><p class="content">Designed a user-friendly interface for users to add, search, modify and manage students' information and
+			    		sort students' rank according to their score</p></li>
+					<li><p class="content">Developed a front-end program using Java Swing interface, creaated a database with SQL Server to store the
+			    		information and connected it to the front-end program with JDBC driver</p></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 		<div id="footer">
 			<p>Copyright &copy; Ziguang</p>

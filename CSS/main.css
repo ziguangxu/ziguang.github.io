@@ -5,7 +5,10 @@ img {
 	float: left;
 }
 p.content {
-    font-size: 110%;
+    font-size: 115%;
+}
+ul.entites {
+	list-style-type: disc;
 }
 #footer {
 	background-color: black;
