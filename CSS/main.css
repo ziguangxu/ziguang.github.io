@@ -3,6 +3,8 @@ body {
 }
 img {
 	float: left;
+	height: 200PX;
+	width: 145px;
 }
 p.content {
     font-size: 115%;
